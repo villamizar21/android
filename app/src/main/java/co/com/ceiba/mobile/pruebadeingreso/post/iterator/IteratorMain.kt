@@ -1,5 +1,6 @@
 package co.com.ceiba.mobile.pruebadeingreso.post.iterator
 
+import android.app.AlertDialog
 import android.content.Context
 import android.util.Log
 import co.com.ceiba.mobile.pruebadeingreso.data.DataBase
@@ -23,15 +24,13 @@ class IteratorMain : IteratorMainActivity {
     var data: DataBase? = null
     var user: ArrayList<User> = ArrayList()
     var post: ArrayList<Post> = ArrayList()
-
+    private lateinit var isDialog: AlertDialog
 
     constructor(context: Context?, presenter: PresenterMain?) {
         this.ctx = context
         this.presenter = presenter
         this.postDao = data?.getInstance(context)?.postUser()
     }
-
-    constructor()
 
     fun getRetrofi(): Retrofit {
         return Retrofit.Builder()
@@ -40,8 +39,14 @@ class IteratorMain : IteratorMainActivity {
             .build()
     }
 
-
     override fun getUsers() {
+
+       val builder = AlertDialog.Builder(ctx)
+        builder.setCancelable(false)
+        builder.setMessage("Cargando...")
+        isDialog = builder.create()
+        isDialog.show()
+
         val resultService = getRetrofi().create(IRestUsers::class.java)
         val result: Call<List<User>> = resultService.getAllUsers()
 
@@ -50,10 +55,12 @@ class IteratorMain : IteratorMainActivity {
             override fun onResponse(call: Call<List<User>>, response: Response<List<User>>) {
                 user = response.body() as ArrayList<User>
                 listaUsers(user)
+                isDialog.dismiss()
             }
 
             override fun onFailure(call: Call<List<User>>, t: Throwable) {
                 Log.e("", " Fallo en la Respuesta " + t.message)
+                isDialog.dismiss()
             }
         })
     }
@@ -63,6 +70,11 @@ class IteratorMain : IteratorMainActivity {
     }
 
     override fun getPostList(userId: Int) {
+        val builder = AlertDialog.Builder(ctx)
+        builder.setCancelable(false)
+        builder.setMessage("Cargando...")
+        isDialog = builder.create()
+        isDialog.show()
 
         val resultService = getRetrofi().create(IRestUsers::class.java)
         val result: Call<List<Post>> = resultService.getPosts(userId)
@@ -72,10 +84,12 @@ class IteratorMain : IteratorMainActivity {
             override fun onResponse(call: Call<List<Post>>, response: Response<List<Post>>) {
                post =response.body() as ArrayList<Post>
                 listaPost(post)
+                isDialog.dismiss()
             }
 
             override fun onFailure(call: Call<List<Post>>, t: Throwable) {
                 Log.e("", " Fallo en la Respuesta " + t.message)
+                isDialog.dismiss()
             }
         })
     }

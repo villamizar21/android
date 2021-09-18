@@ -13,13 +13,13 @@ import co.com.ceiba.mobile.pruebadeingreso.post.model.User
 
 class RecyclerAdapter(
     private val context: Context,
-    val listaUser: List<User>,
+    val listUser: ArrayList<User>,
     private val itemClick: OnUserClickListener
 ) :
     RecyclerView.Adapter<AdapterMain<*>>() {
 
-    var listUser: ArrayList<User> = ArrayList()
-    var listAuxList: ArrayList<User> = ArrayList()
+    var listFilter = listUser
+    var newList = listUser
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): AdapterMain<*> {
         return userViewHolder(
@@ -28,18 +28,17 @@ class RecyclerAdapter(
     }
 
     override fun onBindViewHolder(holder: AdapterMain<*>, position: Int) {
-        holder.bind(listaUser[position], position)
+        holder.bind(listUser[position], position)
     }
 
     fun filter(): Filter = object : Filter() {
         override fun performFiltering(charSequence: CharSequence): FilterResults {
             val filterList = ArrayList<User>()
             if (charSequence.toString().isEmpty()) {
-                filterList.addAll(listAuxList)
-                Log.e("", "Vacio?-->" + listAuxList.toString())
+                filterList.addAll(newList)
             } else {
-                for (user in listAuxList) {
-                    if (user.name.toLowerCase().contains(charSequence.toString().toLowerCase())) {
+                for (user in newList) {
+                    if (user.name.toLowerCase().startsWith(charSequence.toString().toLowerCase())) {
                         filterList.add(user)
                     }
                 }
@@ -50,14 +49,14 @@ class RecyclerAdapter(
         }
 
         override fun publishResults(charSequence: CharSequence, filterResults: FilterResults) {
-            listUser.clear()
-            listUser.addAll(filterResults.values as Collection<User>)//filterResults.values as Collection<User?>
+            listFilter.clear()
+            listFilter.addAll(filterResults.values as Collection<User>)//filterResults.values as Collection<User?>
             notifyDataSetChanged()
         }
     }
 
     override fun getItemCount(): Int {
-        return listaUser.size
+        return listUser.size
     }
 
     inner class userViewHolder(itemView: View) : AdapterMain<User>(itemView) {
@@ -74,7 +73,6 @@ class RecyclerAdapter(
         }
 
     }
-
     fun getFilter(): Filter? {
         return filter()
     }

@@ -3,6 +3,11 @@
   <component name="issues">
     <option name="index">
       <map>
+        <entry key="/fragment.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$USER_HOME$/Desktop/post-kotlin-develop/app/src/main/java/co/com/ceiba/mobile/pruebadeingreso/database/AppDataBase.kt">
           <value>
             <set />
