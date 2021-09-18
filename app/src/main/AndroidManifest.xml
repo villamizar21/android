@@ -18,7 +18,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name="co.com.ceiba.mobile.pruebadeingreso.PostActivity" />
+        <activity android:name="co.com.ceiba.mobile.pruebadeingreso.post.view.post_users.PostActivity" />
     </application>
 
 </manifest>

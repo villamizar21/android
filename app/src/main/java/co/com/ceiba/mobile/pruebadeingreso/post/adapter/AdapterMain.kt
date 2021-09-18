@@ -1,4 +1,4 @@
-package co.com.ceiba.mobile.pruebadeingreso
+package co.com.ceiba.mobile.pruebadeingreso.post.adapter
 
 import android.support.v7.widget.RecyclerView
 import android.view.View

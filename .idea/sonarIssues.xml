@@ -3,12 +3,42 @@
   <component name="issues">
     <option name="index">
       <map>
+        <entry key="$USER_HOME$/Desktop/post-kotlin-develop/app/src/main/java/co/com/ceiba/mobile/pruebadeingreso/database/AppDataBase.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/Desktop/post-kotlin-develop/app/src/main/java/co/com/ceiba/mobile/pruebadeingreso/post/iterator/IteratorMainActivity.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/Desktop/post-kotlin-develop/app/src/main/java/co/com/ceiba/mobile/pruebadeingreso/post/view/MainActivity.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$USER_HOME$/Documents/Prueba ceiba david/app/src/main/java/co/com/ceiba/mobile/pruebadeingreso/post/view/MainActivity.kt">
           <value>
             <set />
           </value>
         </entry>
         <entry key="$PROJECT_DIR$/app/build.gradle">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/build/tmp/kapt3/stubs/debug/co/com/ceiba/mobile/pruebadeingreso/data/DataBase.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/build/tmp/kapt3/stubs/debug/co/com/ceiba/mobile/pruebadeingreso/post/Post_dao/PostDao.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/build/tmp/kapt3/stubs/debug/co/com/ceiba/mobile/pruebadeingreso/post/model/User.java">
           <value>
             <set />
           </value>
@@ -48,6 +78,21 @@
             <set />
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/java/co/com/ceiba/mobile/pruebadeingreso/data/Convetrers.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/java/co/com/ceiba/mobile/pruebadeingreso/data/DataBase.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/java/co/com/ceiba/mobile/pruebadeingreso/data/UserAPP.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/app/src/main/java/co/com/ceiba/mobile/pruebadeingreso/model/Address.kt">
           <value>
             <set />
@@ -64,6 +109,31 @@
           </value>
         </entry>
         <entry key="$PROJECT_DIR$/app/src/main/java/co/com/ceiba/mobile/pruebadeingreso/model/User.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/java/co/com/ceiba/mobile/pruebadeingreso/post/Post_dao/PostDao.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/java/co/com/ceiba/mobile/pruebadeingreso/post/adapter/AdapterMain.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/java/co/com/ceiba/mobile/pruebadeingreso/post/adapter/AdapterPost.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/java/co/com/ceiba/mobile/pruebadeingreso/post/adapter/RecyclerAdapter.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/java/co/com/ceiba/mobile/pruebadeingreso/post/adapter/RecyclerPost.kt">
           <value>
             <set />
           </value>
@@ -128,6 +198,11 @@
             <set />
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/java/co/com/ceiba/mobile/pruebadeingreso/post/model/Post.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/app/src/main/java/co/com/ceiba/mobile/pruebadeingreso/post/model/User.kt">
           <value>
             <set />
@@ -159,6 +234,21 @@
           </value>
         </entry>
         <entry key="$PROJECT_DIR$/app/src/main/java/co/com/ceiba/mobile/pruebadeingreso/post/view/MainActivity.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/java/co/com/ceiba/mobile/pruebadeingreso/post/view/post_users/IPost.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/java/co/com/ceiba/mobile/pruebadeingreso/post/view/post_users/PostActivity.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/java/co/com/ceiba/mobile/pruebadeingreso/post_users/PostActivity.kt">
           <value>
             <set />
           </value>
